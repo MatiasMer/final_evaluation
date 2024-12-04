@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Botón para agregar la tarea -->
+    <!-- Lista para mostrar las tareas -->
+    <!-- Campo para editar la tarea seleccionada -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar nueva tarea" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTask"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="174dp"
+        android:text="Agregar" />
+
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_marginTop="114dp" />
+
+    <EditText
+        android:id="@+id/editTextEditTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar tarea"
+        android:layout_below="@id/listViewTasks"
+        android:visibility="gone"/> <!-- Oculto por defecto -->
+    <!-- Botón para guardar cambios de la tarea editada -->
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:layout_below="@id/editTextEditTask"
+        android:visibility="gone"/> <!-- Oculto por defecto -->
+    <!-- Botón para eliminar la tarea -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_below="@id/buttonEdit"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="27dp"
+        android:text="Eliminar" />
+
+</RelativeLayout>

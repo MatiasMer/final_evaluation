@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@color/design_default_color_secondary"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Btnscan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:text="scanear"
+        app:layout_constraintTop_toBottomOf="@+id/TxtRes"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp" />
+
+    <EditText
+        android:id="@+id/TxtRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/BTNcrud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="productos"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <Button
+        android:id="@+id/BtnCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrito"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
